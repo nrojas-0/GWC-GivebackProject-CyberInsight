@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Insight Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Link to JavaScript file -->
+    <style>
+        /* CSS to hide quiz containers by default */
+        .quiz-container {
+            display: none;
+        }
+        #submit-button {
+            display: none;
+        }
+        #reset-button {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Cyber Insight</h1>
+    </header>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="News.html">Cyber News</a>
+        <a class="active" href="Quiz.html">Quiz</a>
+        <a href="CyberInfo.html">Cyber Info</a>
+        <a href="Resources.html">Resources</a>
+        <a href="About.html">About</a>
+
+    </nav>
+    <h1>Welcome to the Cybersecurity Quiz</h1>
+    <!-- Quiz for Young Users (Under 18) -->
+    <div id="quiz-container-1" class="quiz-container">
+        <h2>Quiz for Young Users (Under 18)</h2>
+        <p class="question">Question 1: What should you avoid sharing on social media?</p>
+
+        <label><input type="radio" name="q1" value="a">A. Personal Information</label><br>
+
+        <label><input type="radio" name="q1" value="b">B. Cute Photos</label><br>
+
+        <label><input type="radio" name="q1" value="c">C. Repost from your friends and family.</label><br>
+        <label><input type="radio" name="q1" value="d">D. Your favorite shows or celebrities</label>
+
+        <p class="question">Question 2: Your friend tells you about a cool new game they downloaded from a website. You want to try it too, What’s the safest thing to do?</p>
+        <label><input type="radio" name="q2" value="a">A. Just download the game because it's your friend !</label><br>
+        <label><input type="radio" name="q2" value="b">B. Download the game on a public computer to check if it's safe.</label><br>
+        <label><input type="radio" name="q2" value="c">C. Ask your friend for the username and password to use their account</label><br>
+        <label><input type="radio" name="q2" value="d">D. Search for the game on a credible app store or the official website of the game developer.</label><br>
+
+        
+        <p class="question">Question 3: You get a text message with a link saying you’ve won a prize. What should you do?</p>
+        <label><input type="radio" name="q3" value="a">A. Click the link immediately to claim your prize. Yayyy!</label><br>
+        <label><input type="radio" name="q3" value="b">B. Ignore the message and delete it.</label><br>
+        <label><input type="radio" name="q3" value="c">C. Reply to the message asking for more details.</label><br>
+        <label><input type="radio" name="q3" value="d">D. Share the link with friends to see if they won a prize too.</label>
+        
+        <p class="question">Question 4: You receive an email from an unknown address that looks like it’s from your favorite store, asking for your account details. What should you do?</p>
+          <label><input type="radio" name="q4" value="a">A. Ignore the email or delete it, and contact the store directly using their official website or customer service number.</label><br>
+            <label><input type="radio" name="q4" value="b">B. Click the links in the email to verify your account.</label><br>
+            <label><input type="radio" name="q4" value="c">C. Send the email to friends to see if they received the same message.</label><br>
+            <label><input type="radio" name="q4" value="d">D. Call the number in the email and ask for more details</label>
+
+        <p class="question">Question 5: Which of the following is a good sign that a website is safe to use?</p>
+        <label><input type="radio" name="q5" value="a">A. The website has lots of pop-up ads.</label><br>
+        <label><input type="radio" name="q5" value="b">B. The website loads quickly.</label><br>
+        <label><input type="radio" name="q5" value="c">C. The website URL begins with "https://" and displays a padlock icon.</label><br>
+        <label><input type="radio" name="q5" value="d">D. The website asks for personal information right away.</label>
+        
+    </div>
+
+    <!-- Quiz for Adults (18-64) -->
+    <div id="quiz-container-2" class="quiz-container">
+        <h2>Quiz for Adults (18-64)</h2>
+        <p class="question">Question 1: You receive an email from what appears to be your bank, asking you to verify your account details by clicking on a link. The email looks legitimate but contains small errors like spelling mistakes. How do you respond?</p>
+        <label><input type="radio" name="q1" value="a">A. Click the link to verify your account since it’s urgent.</label><br>
+        <label><input type="radio" name="q1" value="b">B. Call your bank using the official phone number listed on their website and ask if the email is legitimate.</label><br>
+        <label><input type="radio" name="q1" value="c">C. Reply to the email asking for more details before you click anything.</label><br>
+        <label><input type="radio" name="q1" value="d">D. Assume it’s not important and ignore it entirely.</label>
+
+        <p class="question">Question 2: You find an incredible deal on a website for a product you’ve been looking for, but the website looks a bit unprofessional and has no reviews. How do you respond?</p>
+        <label><input type="radio" name="q2" value="a">A. Quickly purchase the item before the deal runs out.</label><br>
+        <label><input type="radio" name="q2" value="b">B. Search online for customer reviews and ratings of the website before making a decision.</label><br>
+        <label><input type="radio" name="q2" value="c">C. Ask the seller to take a direct payment via a money transfer app.</label><br>
+        <label><input type="radio" name="q2" value="d">D. Check if the website has an 'https://' URL and proceed if it does.</label>
+
+        <p class="question">Question 3: You’re hit with ransomware and all your files are encrypted. The attacker demands $1,000 in Bitcoin to unlock them. How do you respond?</p>
+        <label><input type="radio" name="q3" value="a">A. Pay the ransom immediately to get your files back.</label><br>
+
+        <label><input type="radio" name="q3" value="b">B. Disconnect your device from the network and contact a cybersecurity professional or local authority.</label><br>
+
+        <label><input type="radio" name="q3" value="c">C. Attempt to negotiate a lower ransom with the attacker.</label><br>
+        <label><input type="radio" name="q3" value="d">D. Post online asking for help on social media or forums.</label>
+
+        <p class="question">Question 4: You use the same password for multiple online accounts, and you find out one account has been compromised. What should you do immediately?</p>
+        <label><input type="radio" name="q4" value="a">A. Only change the password of the hacked account.</label><br>
+
+        <label><input type="radio" name="q4" value="b">B. Change the password for all accounts, ensuring each has a unique, strong password.</label><br>
+
+        <label><input type="radio" name="q4" value="c">C. Wait to see if any of the other accounts are affected.</label><br>
+        <label><input type="radio" name="q4" value="d">D. Add an additional number or special character to your current password to make it more secure.</label>
+
+        <p class="question">Question 5: You leave your Bluetooth turned on all the time for convenience. What could be the potential risk?</p>
+        <label><input type="radio" name="q5" value="a">A. Hackers in close proximity could exploit your Bluetooth to gain unauthorized access to your device.</label><br>
+
+        <label><input type="radio" name="q5" value="b">B. Your device will automatically connect to secure, trusted devices only.</label><br>
+
+        <label><input type="radio" name="q5" value="c">C. Bluetooth has no security vulnerabilities, so this is not a concern.</label><br>
+        <label><input type="radio" name="q5" value="d">D. The only consequence is slightly increased battery consumption.</label>
+    </div>
+
+    <!-- Quiz for Seniors (65+) -->
+    <div id="quiz-container-3" class="quiz-container">
+        <h2>Quiz for Seniors (65+)</h2>
+        <p class="questionCon3">Question 1: You receive an email stating that someone within the area has logged in with your credentials, but it wasn’t you. What do you do?</p>
+        
+        <label><input type="radio" name="q1" value="a">A. Ignore the email.</label><br>
+        
+        <label><input type="radio" name="q1" value="b">B. Alert the company and wait for them to resolve the issue.</label><br>
+        
+        <label><input type="radio" name="q1" value="c">C. Delete your google account and start a new one.</label><br>
+        <label><input type="radio" name="q1" value="d">D. Read the company's policy on account recovery, sign out on all accounts and follow the steps to reset your password and/or lock your account.</label>
+
+        <p class="questionCon3">Question 2: An unknown number calls you and you pick up. They ask if you can hear them. How do you respond?</p>
+        <label><input type="radio" name="q2" value="a">A. Say yes, because you can hear them.</label><br>
+        <label><input type="radio" name="q2" value="b">B. Ask who this is and the reason for the call, if the caller is still unknown to you immediately hang up.</label><br>
+        <label><input type="radio" name="q2" value="c">C. Ask if they know you.</label><br>
+        <label><input type="radio" name="q2" value="d">D. Ask the caller to text you, or leave a voicemail instead.</label>
+
+        <p class="questionCon3">Question 3: You google the number for Best Buy customer service to speak with someone over the phone about how to get your device working properly. The best buy employee tells you that you’ll need to download an app so they can control your device and solve the issue without you coming in the store. How do you handle this situation?</p>
+        <label><input type="radio" name="q3" value="a">A. Immediately hang up.</label><br>
+        <label><input type="radio" name="q3" value="b">B. Tell the caller your issue and download the app.</label><br>
+        <label><input type="radio" name="q3" value="c">C. Question the Best Buy employee on everything they have said.</label><br>
+        <label><input type="radio" name="q3" value="d">D. Ask the employee to transfer you to another employee with less complicated steps.</label>
+
+        <p class="questionCon3">Question 4: An unknown number sends you a text about a failed payment and then asks you to click the link to verify the information is fraud. What do you do?</p>
+        <label><input type="radio" name="q4" value="a">A. Call the number and ask them questions about the failed payment.</label><br>
+        <label><input type="radio" name="q4" value="b">B. Text them back asking the steps to resolve this issue.</label><br>
+        <label><input type="radio" name="q4" value="c">C. Do not click the link, contact your bank, check suspicious activity on your accounts, delete and block the number.</label><br>
+        <label><input type="radio" name="q4" value="d">D. Send the requested amount to avoid a late payment.</label>
+
+        <p class="questionCon3">Question 5: You get a text message from John, an IT Support Specialist, saying that your email login credentials are out of date and you will lose access to your gmail account. John tells you to share your username and password so he can help update your account. What do you do?</p>
+        <label><input type="radio" name="q5" value="a">A. Give John your login information and him to let you know when your account is running again.</label><br>
+        <label><input type="radio" name="q5" value="b">B. Tell John that you can login to your account and that this information is a mistake.</label><br>
+        <label><input type="radio" name="q5" value="c">C. Do not give John your password to your account, verify if you can login your account and contact your emailing company if you have trouble accessing it.</label><br>
+        <label><input type="radio" name="q5" value="d">D. Ignore the message and wait for John to text again to know it is urgent.</label>
+    </div>
+    
+    <!-- Buttons for submitting and resetting the quiz -->
+    <button id="submit-button" type="button" onclick="checkQuizAnswers()">Submit Quiz</button>
+    <button id="reset-button" type="button" onclick="resetQuiz()">Reset Quiz</button>
+
+    <!-- Results will be shown here -->
+    <p id="result"></p>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

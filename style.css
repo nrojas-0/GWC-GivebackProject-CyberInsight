@@ -1,0 +1,243 @@
+body {
+    background-color: #FCFBF4; /*Change out later*/
+     }
+body h2{
+  text-align: center;
+  background-color: #2ee5c1;;
+}
+h1 { /*Style for Main Header of website pages*/
+  color: midnightblue;
+  text-align: center;
+ /*Diff color while setting up page wireframe*/
+}
+footer {
+  background-color: black; /*Diff color while setting up page wireframe*/
+  text-align: center;
+    color: white;
+}
+footer a{
+    font-size: 20px;
+    color: orange;
+}
+
+/* Styling the navigation bar */
+.navbar {
+  background-color: white; /* Diff color while setting up page wireframe */
+  border: 2px solid black; /* Border thickness */
+  padding: 10px 0; /* Adjust padding for more space */
+  margin: 0 20px; /* Margin to keep the navbar within the page */
+  overflow: hidden;
+  display: flex; /* Use flexbox to align navbar items */
+  justify-content: space-evenly; /* Distribute items evenly */
+  align-items: center; /* Vertically align items */
+  border-radius: 8px; /* Optional: Round corners */
+  flex-wrap: wrap; /* Allow the navbar items to wrap on smaller screens */
+}
+
+/* Default navigation bar style for links */
+.navbar a {
+  text-decoration: none;
+  color: darkturquoise;
+  font-size: 20px;
+  padding: 10px 20px; /* Adds padding to links for better spacing */
+  display: block; /* Makes links behave like block elements for better control */
+  transition: all 0.3s ease; /* Smooth transition effect for color and background */
+}
+
+/* Hover state for links */
+.navbar a:hover {
+  color: lightgray;
+  background-color: #000;
+  text-decoration: none;
+}
+
+/* Active state for links */
+.navbar a:active {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  /* Stack the navbar items vertically on smaller screens */
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch; /* Ensure items stretch across the full width */
+  }
+
+  /* Adjust font size and padding for smaller screens */
+  .navbar a {
+    font-size: 18px;
+    padding: 8px 15px;
+    width: 100%; /* Make links full width on smaller screens */
+    text-align: center; /* Center align text in the links */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .navbar {
+    padding: 8px 0; /* Reduce padding for very small screens */
+  }
+
+  .navbar a {
+    font-size: 16px; /* Further reduce font size */
+  }
+}
+
+
+
+/* OTHER STYLING*/
+/*Styling the main content area*/
+.pre-quizcontainer {
+    text-align: left;      /* Center text and elements within the quiz container */
+    padding: 20px;
+    border: 1px solid #ccc;  /* Optional: Add a border for visual distinction */
+    border-radius: 10px;     /* Optional: Add rounded corners */
+    background-color: #f9f9f9; /* Optional: Add a background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+    font-size: 20px;
+}
+.correct {
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.incorrect {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.not-selected {
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.quizcontainer{
+  background-color: #73c8f2;
+}
+
+.question {
+    font-weight: bold;
+}
+.questionCon3{
+    font-weight: bold;
+    font-size: 24px;
+}
+#quiz-container-3 label {
+    font-size: 22px; /* Adjust the size as needed */
+}
+
+
+/* Pop-up CSS (Paste this into your existing stylesheet) */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    cursor: pointer;
+}
+/* ABOUT PAGE STYLING*/
+.profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Adds space between profile items */
+    margin: 20px 0;
+}
+
+.person {
+    flex: 1 1 300px; /* Each profile takes up a minimum width of 300px */
+    max-width: 300px;
+    text-align: center;
+}
+
+.person img {
+    width: 100%; /* Make sure images fit inside the profile container */
+    height: auto;
+    border-radius: 50%; /* Optional: makes the image circular */
+}
+
+.person h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.person p {
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .profiles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .person {
+        max-width: 100%; /* Take up the full width on smaller screens */
+    }
+}
+
+/* Currently works on the laptop display and phone display! :) */
+
+.ContactInfo {
+  display: flex;
+  justify-content: space-around;
+  background-color: #7edae7;
+  text-align: center;
+}
+
+/*changes the display look of the "Quiz" tab */
+.active{
+    background-color: darkblue;
+    border: 10px;
+.index{
+    background-color: darkblue;
+
+.News{
+    background-color: darkblue;
+}.quiz{
+    background-color:darkblue;
+
+.Resources{
+    background-color:darkblue;
+}
+
+    .hidden {
+         display: none; /* This class will hide elements */
+     }
+

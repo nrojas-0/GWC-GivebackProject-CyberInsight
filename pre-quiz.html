@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberInsight Prequiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cyber Insight</h1>
+    </header>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="News.html">News</a>
+        <a href="Quiz.html">Quiz</a>
+        <a href="CyberInfo.html">Cyber Info</a>
+        <a href="Resources.html">Resources</a>
+        <a href="About.html">About</a>
+    </nav>
+    <main>
+        <div class="pre-quizcontainer">
+            <!-- Testing out different types for the quiz questions -->
+            <section>
+                <form id="pre-quizForm">
+                    <h2>Pre-Quiz</h2>
+                    <p><strong>1. What is Cybersecurity?</strong></p>
+                    <img src="Images/Pre-Quiz_Pic1.jpg" alt="Quiz" width="260" height="240"><br>
+                    <div class="radio-container">
+                        <label><input type="radio" name="q1" value="a"> A. Protecting digital information, devices, and networks from unauthorized access or unlawful activities.</label><br>
+                        <label><input type="radio" name="q1" value="b"> B. Private information on digital platforms.</label><br>
+                        <label><input type="radio" name="q1" value="c"> C. Fast security actions.</label><br>
+                        <label><input type="radio" name="q1" value="d"> D. Digital information that has been shared on a secured network.</label>
+                    </div>
+
+                    <p><strong>2. What consists of a strong password?</strong></p>
+                    <img src="Images/Pre-Quiz_Pic2.jpg" alt="Quiz" width="260" height="240"><br>
+                    <div class="radio-container">
+                        <label><input type="radio" name="q2" value="a"> A. Your name and birth year.</label><br>
+                        <label><input type="radio" name="q2" value="b"> B. A mix of numbers, symbols, upper and lowercase letters. At least 12 characters long.</label><br>
+                        <label><input type="radio" name="q2" value="c"> C. A re-used password for easy memorization.</label><br>
+                        <label><input type="radio" name="q2" value="d"> D. Repeating a single letter or number multiple times.</label>
+                    </div>
+
+                    <p><strong>3. Cybercriminals only go after big companies</strong></p>
+                    <img src="Images/Pre-Quiz_Pic3.jpg" alt="Quiz" width="260" height="240"><br>
+                    <div class="radio-container">
+                        <label><input type="radio" name="q3" value="a"> A. True</label><br>
+                        <label><input type="radio" name="q3" value="b"> B. False</label><br>
+                    </div>
+
+                    <p><strong>4. What is two-factor authentication (2FA)?</strong></p>
+                    <img src="Images/Pre-Quiz_Pic4.jpg" alt="Quiz" width="260" height="240"><br>
+                    <div class="radio-container">
+                        <label><input type="radio" name="q4" value="a"> A. A method to enhance the speed of the internet.</label><br>
+                        <label><input type="radio" name="q4" value="b"> B. Logging in with just your username.</label><br>
+                        <label><input type="radio" name="q4" value="c"> C. A security process requiring two separate forms of identification.</label><br>
+                        <label><input type="radio" name="q4" value="d"> D. A backup internet service provider.</label>
+                    </div>
+
+                    <p><strong>5. Which of the following is NOT considered an online scam?</strong></p>
+                    <img src="Images/scam.png" alt="Quiz" width="260" height="240"><br>
+                    <div class="radio-container">
+                        <label><input type="radio" name="q5" value="a"> A. Phishing emails</label><br>
+                        <label><input type="radio" name="q5" value="b"> B. Fake tech support calls</label><br>
+                        <label><input type="radio" name="q5" value="c"> C. Government-issued security warnings</label><br>
+                        <label><input type="radio" name="q5" value="d"> D. Fraudulent investment schemes</label>
+                    </div>
+
+                    <button type="button" onclick="resetQuiz()">Reset Quiz</button>
+                    <button type="button" onclick="checkPreAnswers()">Submit Answers</button>
+                </form>
+                <p id="result"></p>
+            </section>
+        </div>    
+    </main>
+    <footer id="footer-placeholder"></footer>
+    <script src="script.js"></script>
+</body>
+</html>
